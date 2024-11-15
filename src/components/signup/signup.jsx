@@ -151,7 +151,7 @@ const SignupForm = () => {
             </button>
           </form>
           <div className={styles.victoryImage}>
-            <div>
+            <div style={{ width: "100%" }}>
               <div className={styles.bulletpoint}>
                 <img src={images["svg/bullet-point.svg"]} alt="right" />
                 <div className={styles.bulletText}>30k USD in token drops</div>
