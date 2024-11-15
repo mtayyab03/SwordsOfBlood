@@ -180,6 +180,8 @@
   }
   .formContent {
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
   }
   .inputRow {
     display: flex;
@@ -197,15 +199,17 @@
   .victoryImage {
     margin: 0 auto;
   }
-
+  /* .signupForm {
+    align-items: center;
+    justify-content: center;
+  } */
   .signupButton {
     width: 100%;
-    margin-left: 1.1rem;
+    margin-left: 2.2rem;
   }
 
   .inputField {
     width: 100%;
-    max-width: 100%;
   }
 }
 
