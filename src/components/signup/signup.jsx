@@ -111,20 +111,20 @@ const SignupForm = () => {
             </div>
             <div className={styles.inputRow}>
               <input
-                type="text"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                placeholder="Full Name"
-                className={styles.inputField}
-                required
-              />
-              <input
                 type="password"
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 placeholder="Confirm Password"
+                className={styles.inputField}
+                required
+              />
+              <input
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder="Full Name"
                 className={styles.inputField}
                 required
               />
