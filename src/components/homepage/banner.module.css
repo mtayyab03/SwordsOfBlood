@@ -1,0 +1,647 @@
+.heroSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 437px !important;
+  margin-top: 30px;
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+
+.cardOverlay {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 27%;
+  height: 437px !important;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #c9ab84;
+  box-shadow: 0 4px 10px rgba(243, 222, 136, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContent {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.victoryImage {
+  background-image: url("../../images/home/swordfairy.png");
+  background-size: cover;
+  background-position: center;
+  width: 400px; /* Set width to desired size */
+  height: 342px; /* Set height to desired size */
+  position: relative; /* To allow positioning of child elements */
+}
+.bulletpoint {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 2rem;
+  color: white; /* Or any color to make the text visible */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.prizeTitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #c9ab84;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 1rem;
+}
+
+.bulletText {
+  font-size: 20px;
+  margin-left: 13px;
+  text-decoration: none;
+  text-align: left; /* Explicitly aligns text to the left */
+}
+
+.betaSignUpButton {
+  width: 100%;
+  height: 60px;
+  padding-top: 1.1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  color: #242424;
+  background-color: #c9ab84;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cardOverlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .victoryImage {
+    width: 120%;
+  }
+
+  .betaSignUpButton {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cardOverlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardOverlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .image {
+  height: 140%;
+  /* object-fit: cover; */
+  transform: scaleX(1.1);
+  /* margin-left: -35px; */
+  object-position: center;
+  object-fit: cover;
+}
+
+.banner .connectWalletContainer {
+  position: absolute;
+  right: 0;
+  max-width: 362px;
+  top: 30px;
+  height: 90px;
+  border: 1px solid var(--primary-color);
+  border-radius: 14px;
+  bottom: 0;
+  box-sizing: content-box;
+  overflow: hidden;
+  background: rgba(21, 21, 21, 0.8);
+  /* border: 1px solid red; */
+}
+
+.banner .presaleWrapper {
+  padding: 15px 25px;
+  padding-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.banner .presaleWrapper.loading {
+  background-image: url("../../images/svg/loading.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+}
+
+.banner .presaleWrapper.completed {
+  min-height: auto;
+}
+
+.presaleWrap {
+  text-align: center;
+  padding: 17px;
+}
+
+.banner .presaleImage {
+  width: 28px;
+  height: auto;
+}
+
+.swdtknContainer {
+  background-color: #c9ab84;
+  height: 45px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swdtkn {
+  font-size: 20px;
+  color: #0a0a0a;
+  font-weight: 600;
+  line-height: 25.52px;
+  text-align: center;
+}
+
+.MEXC {
+  text-align: center;
+  padding: 10px 5px;
+  height: 30px;
+  margin: auto;
+}
+
+.mexcimg {
+  height: 25px;
+}
+
+.banner .presaleAndText {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner .presaleTextAndAmount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.banner .amountAndText {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.banner .info {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  flex-direction: column;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  padding: 26px 0 27px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 75px;
+}
+
+.banner .step1 .info {
+  padding: 20px 0;
+}
+
+.banner .progress {
+  background-color: #242424;
+  border-radius: 3px;
+  position: relative;
+  height: 12px;
+  width: 100%;
+}
+
+.banner .progressDone {
+  background: #c9ab84;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.banner .amountContainer {
+  padding: 20px 0;
+}
+
+.banner .step1 .amountContainer {
+  padding: 12px 0;
+}
+
+.banner .amountTextAndAmountNumber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 2px 0;
+}
+
+.banner .amountText {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: justify;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.banner .amountNumber {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: justify;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.banner .connectWallet {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+  color: #050505;
+  background: rgb(201, 171, 132, 0.85);
+  border-radius: 14px;
+  padding: 13px 10px;
+  width: 100%;
+  cursor: pointer;
+  height: 60px;
+}
+
+.banner .loadingWalletButton {
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  width: calc(100% - 2px);
+}
+
+.buyingMethod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buyingMethod {
+  margin-top: 20px;
+  position: absolute;
+  width: calc(100% - 2px);
+  bottom: 0;
+  left: 1px;
+}
+
+.buyingButton {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #050505;
+  background: #c9ab84;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  padding: 2px 8px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.loadingInfoText,
+.statusText {
+  position: absolute;
+  top: 200px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.statusText {
+  top: 150px;
+}
+
+.gold_bg {
+  background: #3aff71;
+  color: #000;
+  padding: 2px 3px;
+  border-radius: 2px;
+  width: fit-content;
+}
+
+.instructions {
+  background: #c9ab84;
+  /* border-radius: 14px; */
+  text-align: center;
+  padding: 10px 25px;
+  width: 100%;
+  position: absolute;
+  margin-top: 25px;
+  top: 73px;
+  left: 0;
+}
+
+.instructions > p {
+  color: #060b0f;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+}
+.thankMessage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 63px;
+  padding-bottom: 5px;
+}
+.thankMessage > p {
+  color: #fff;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media only screen and (min-width: 992px) {
+  .banner .connectWalletContainer {
+    min-width: 380px;
+  }
+  .heroSection {
+    border-radius: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner .connectWalletContainer {
+    margin-top: -20px !important;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .heroSection {
+    border-radius: 14px !important;
+  }
+
+  .banner .presaleWrapper {
+    padding: 15px;
+    padding-bottom: 0px;
+  }
+
+  .banner .image {
+    transform: translateX(0);
+  }
+
+  .banner .connectWalletContainer {
+    /* top: 0; */
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .heroSection {
+    height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .heroSection {
+    height: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .heroSection {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heroSection {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner .connectWalletContainer {
+    position: relative;
+    z-index: 2;
+    border: none;
+    margin-top: -50px;
+    /* margin-bottom: 60px; */
+    /* height: 435px !important; */
+    top: 0;
+  }
+
+  .banner .image {
+    height: 100%;
+    transform: translateX(0);
+  }
+
+  .buyingMethod {
+    bottom: 1px;
+  }
+
+  .banner .loadingWalletButton {
+    left: 2px;
+    bottom: 2px;
+    width: calc(100% - 4px);
+  }
+
+  .banner .connectWalletContainer.step1 {
+    height: 313px;
+  }
+  .banner .connectWalletContainer.step1 {
+    height: 435px !important;
+  }
+
+  .banner .connectWalletContainer::before {
+    content: "";
+    /* background: rgba(0, 0, 0, 0.85); */
+    border: 1px solid #c9ab84;
+    border-radius: 14px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .banner .image {
+    border-radius: 14px 14px 14px 14px;
+  }
+
+  .banner .amountContainer {
+    padding: 12px 0;
+  }
+
+  .heroSection {
+    padding-bottom: 50px;
+  }
+  .thankMessage {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .image {
+    display: none !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  .instructions {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .banner .connectWallet {
+    padding: 16px 10px;
+  }
+  .banner .info {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner .amountContainer {
+    padding: 23px 0;
+  }
+
+  .banner .amountAndText {
+    font-size: 16px;
+  }
+
+  .banner .amountText {
+    font-size: 16px;
+  }
+
+  .banner .amountNumber {
+    font-size: 16px;
+  }
+
+  .presaleTextAndAmount .titleText {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .banner .info {
+    font-size: 11px;
+    line-height: 100%;
+  }
+  .banner .presaleAndText {
+    gap: 12px;
+  }
+
+  .banner .amountContainer {
+    padding: 27px 0;
+  }
+
+  .banner .amountAndText {
+    font-size: 12px;
+  }
+
+  .banner .amountText {
+    font-size: 12px;
+  }
+
+  .banner .amountNumber {
+    font-size: 14px;
+  }
+
+  .banner .connectWallet {
+    font-size: 16px;
+  }
+
+  .presaleTextAndAmount .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 990px) {
+  .heroSection {
+    margin-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

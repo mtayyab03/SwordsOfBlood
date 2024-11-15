@@ -1,0 +1,112 @@
+.contactusWrapper {
+  border: 1px solid #c9ab84;
+  border-radius: 14px;
+  height: 278px !important;
+  margin: 40px auto;
+  max-height: 278px !important;
+  overflow: hidden;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 100%;
+}
+
+.contactus {
+  width: 557px;
+  height: 278px;
+  border-radius: 18px;
+  position: relative;
+  border: 1px solid #c9ab84;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.image {
+  height: 288px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+.textWrapper {
+  /* width: 366.56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  left: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(calc(-100% - 110px), -50%);
+  transform: translate(calc(-100% - 110px), -50%);
+  width: 366.56px;
+}
+
+@media screen and (max-width: 950px) {
+  .textWrapper {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 768px) {
+.textWrapper {
+  padding: 0 10px;
+}
+}
+@media screen and (max-width: 600px) {
+  .textWrapper {
+    width: 100%;
+  }
+}
+.contactDetails {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+
+.contactButton {
+  display: inline-block;
+  height: 42px;
+  width: 164.15px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid #ffffff;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1300px) {
+  .contactusWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactus {
+    width: 100%;
+    height: 248px;
+  }
+}

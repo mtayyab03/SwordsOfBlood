@@ -1,0 +1,189 @@
+
+
+.ult-tag {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Animales Fantastic";
+  margin-top: 3px;
+  font-weight: 600;
+  mix-blend-mode: normal;
+}
+.mbl-only {
+  display: none !important;
+}
+
+.contactus_contactusWrapper__FfJun {
+  width: 100%;
+}
+.team_teamSection__0W7nM {
+  width: 100%;
+}
+.game-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.indiv-video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 30%;
+}
+ 
+
+.full-vide {
+  max-width: 100% !important;
+  margin: 30px auto;
+  width: 100% !important;
+  padding-bottom: 50px !important;
+  position: relative;
+  padding-bottom: 419px;
+  /* 16:9 aspect ratio */
+  height: auto !important;
+}
+.maxnoso{
+    display: none;
+  }
+
+.indiv-video video {
+  width: 100%;
+}
+.data-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #c9ab84;
+  position: absolute;
+}
+/* Video Banner */
+ .vide-ime {
+  height: 140%;
+  /* object-fit: cover; */
+  transform: scaleX(1.1);
+  margin-left: -35px;
+  object-position: center;
+  object-fit: cover;
+}
+ .vide-ime {
+  border-radius: 14px 14px 0 0;
+}
+
+ 
+ .red-high {
+  background: #da0508;
+  color: #ffffff;
+  padding: 2px 3px;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.abs-img {
+  position: absolute;
+  top: 20px;
+}
+.vid-title{
+    font-family: "Animales Fantastic" !important;
+  color: white !important;
+  text-align: center !important; 
+font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 18px;
+text-align: center;
+letter-spacing: 1px;
+
+color: #FFFFFF;
+
+}
+ 
+@media only screen and (max-width: 1440px) {
+    
+
+   .vide-ime {
+    transform: translateX(0);
+  }
+    .vide-ime {
+    transform: translateX(0);
+  }
+}
+ 
+ 
+
+@media (max-width: 1250px) {
+  .abs-img {
+    position: static;
+  }
+  .no-dsi {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .game-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .indiv-video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+ 
+
+@media only screen and (max-width: 991px) {
+   .vide-ime {
+    height: 100%;
+    transform: translateX(0);
+  }
+  .maxno{
+    display: none;
+  }
+  .maxnoso{
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+  .maxno{
+    display: none;
+  }
+  }
+ 
+@media (max-width: 768px) {
+  
+  .mbl-only {
+    display: block !important;
+  }
+  .separate-bx {
+    width: 100% !important;
+    height: 170px !important;
+  }
+  .indiv-video {
+    gap: 10px;
+  }
+  /* .desk-only{
+    display: none !important;
+    opacity: 0 !important;
+  } */
+  
+  .separate-bx {
+    width: 100% !important;
+    height: 170px !important;
+  }
+   .vide-ime {
+ 
+    position: absolute;
+    top: -55000%;
+  }
+}
+
