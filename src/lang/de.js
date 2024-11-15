@@ -95,7 +95,7 @@ export default function Strings() {
     modeT6: "Kampagne",
     modeInfo:
       "Swords of Bloods MVP bietet mehrere Spielmodi! Erhalten Sie exklusiven Zugang zur geschlossenen Beta (Start im Mai), indem Sie an der laufenden",
-    aboutDesc1: `${config.appName} ist das erste rasante F2P-Hack-and-Slash-RPG in AAA-Qualität auf der Blockchain, das auf Telos gestartet wurde. Es bietet aufregende Kämpfe, hervorragende Grafik und verschiedene Spielmodi.`,
+    aboutDesc1: `${config.appName} ist das erste rasante F2P-Hack-and-Slash-RPG in AAA-Qualität auf der Blockchain, das auf Ape Chain gestartet wurde. Es bietet aufregende Kämpfe, hervorragende Grafik und verschiedene Spielmodi.`,
     aboutDesc2:
       "Gewalt, Verrat und listiges Böses haben den brutalen Untergang der Welt von Ezura herbeigeführt. Der Verräter, ein Wesen von unermesslichem Übel, hat die treuen Beschützer des Reiches ausgelöscht und seit 1.000 Jahren herrscht Dunkelheit.",
     aboutDesc3:

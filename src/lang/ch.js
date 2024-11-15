@@ -90,7 +90,7 @@ export default function Strings() {
     modeT6: "战役",
     modeInfo:
       "Swords of Blood的MVP提供多种游戏模式！参加当前活动即可获得对封闭Beta的独家访问权（将于5月启动）",
-    aboutDesc1: `炫酷的战斗、出色的画面和各种游戏模式，${config.appName} 是第一个在 Telos 区块链上推出的 AAA 级高质量快节奏免费畅玩砍杀 RPG 游戏。`,
+    aboutDesc1: `炫酷的战斗、出色的画面和各种游戏模式，${config.appName} 是第一个在 Ape Chain 区块链上推出的 AAA 级高质量快节奏免费畅玩砍杀 RPG 游戏。`,
     aboutDesc2:
       "暴力、背叛和狡猾的邪恶带来了埃祖拉世界的残酷堕落。背叛者，一个无比邪恶的存在，已经消灭了这个王国坚定的保护者，1000年以来，黑暗一直在统治。",
     aboutDesc3:

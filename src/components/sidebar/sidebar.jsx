@@ -1,16 +1,16 @@
-import { useContext, useEffect, useRef, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Localization from '../../context/localization';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext, useEffect, useRef, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Localization from "../../context/localization";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faCircleChevronDown,
-} from '@fortawesome/free-solid-svg-icons';
-import { config } from '../../functions/config';
-import { importAllImages } from '../../functions/common';
-import { socialLinks } from '../social-links';
-import styles from './sidebar.module.css';
-import gift from '../../images/sidebar-icons/gift_animation.gif';
+} from "@fortawesome/free-solid-svg-icons";
+import { config } from "../../functions/config";
+import { importAllImages } from "../../functions/common";
+import { socialLinks } from "../social-links";
+import styles from "./sidebar.module.css";
+import gift from "../../images/sidebar-icons/gift_animation.gif";
 
 export default function Sidebar({ showSidebar, setShowSidebar }) {
   const { strings, lang, locales, SetLanguage } = useContext(Localization);
@@ -25,10 +25,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
   const [projectDropDown, setProjectDropDown] = useState(false);
   const [aboutDropDown, setAboutDropDown] = useState(false);
   let toggleHere = () => {
-    let closeIco = document.getElementById('close-ico');
-    let openIco = document.getElementById('open-ico');
-    closeIco.classList.add('no-open');
-    openIco.classList.add('imp-mbl');
+    let closeIco = document.getElementById("close-ico");
+    let openIco = document.getElementById("open-ico");
+    closeIco.classList.add("no-open");
+    openIco.classList.add("imp-mbl");
   };
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
           // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <Link
             key={l}
-            to='#'
+            to="#"
             className={styles.content}
             onClick={(_e) => {
               SetLanguage(l);
@@ -47,9 +47,9 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
           >
             <img
               src={images[`lang/${l}.png`]}
-              alt='language'
+              alt="language"
               className={styles.flag}
-            />{' '}
+            />{" "}
             {l.toUpperCase()}
           </Link>
         );
@@ -61,13 +61,13 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
 
   return (
     <div
-      className={[styles.sidebar, showSidebar ? styles.showSidebar : ''].join(
-        ' '
+      className={[styles.sidebar, showSidebar ? styles.showSidebar : ""].join(
+        " "
       )}
     >
       <div>
         <NavLink
-          to='/'
+          to="/"
           onClick={() => {
             setProjectDropDown(false);
             setAboutDropDown(false);
@@ -75,20 +75,20 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
           className={styles.logoContainer}
         >
           <img
-            src={images['logo.webp']}
+            src={images["logo.webp"]}
             alt={strings.logoTitle}
             className={styles.logo}
           />
         </NavLink>
         <div className={styles.navItems}>
           <NavLink
-            to='/'
+            to="/"
             className={({ isActive }) =>
               [
                 styles.navItem,
                 styles.navBtn,
-                isActive ? styles.active : '',
-              ].join(' ')
+                isActive ? styles.active : "",
+              ].join(" ")
             }
             onClick={() => {
               setProjectDropDown(false);
@@ -97,7 +97,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               toggleHere();
             }}
           >
-            <img src={imageIconsPath('Swordsofblood')} alt='Swordsofblood' />
+            <img src={imageIconsPath("Swordsofblood")} alt="Swordsofblood" />
             {config.appName}
           </NavLink>
           <div
@@ -105,11 +105,11 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
             onClick={() => setProjectDropDown(false)}
           >
             <div
-              className={[styles.dropdownHeader, styles.navBtn].join(' ')}
+              className={[styles.dropdownHeader, styles.navBtn].join(" ")}
               onClick={() => setAboutDropDown((prev) => !prev)}
             >
               <p className={styles.navItem}>
-                <img src={imageIconsPath('SOB')} alt='SOB' />
+                <img src={imageIconsPath("SOB")} alt="SOB" />
                 {strings.aboutTtl}
               </p>
               <FontAwesomeIcon
@@ -126,26 +126,26 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               }`}
             >
               <a
-                href='https://swords-of-blood-1.gitbook.io/swords-of-blood-whitepaper/'
-                target='_blank'
-                rel='noreferrer'
-                className={[styles.navItem, styles.dropdownItem].join(' ')}
+                href="https://swords-of-blood-1.gitbook.io/swords-of-blood-whitepaper/"
+                target="_blank"
+                rel="noreferrer"
+                className={[styles.navItem, styles.dropdownItem].join(" ")}
                 onClick={() => {
                   setShowSidebar();
                   toggleHere();
                 }}
               >
-                <img src={imageIconsPath('Whitepaper')} alt='Whitepaper' />
+                <img src={imageIconsPath("Whitepaper")} alt="Whitepaper" />
                 {strings.wpTtl}
               </a>
               <NavLink
-                to='/allocation/'
+                to="/allocation/"
                 className={({ isActive }) =>
                   [
                     styles.navItem,
                     styles.dropdownItem,
-                    isActive ? styles.active : '',
-                  ].join(' ')
+                    isActive ? styles.active : "",
+                  ].join(" ")
                 }
                 onClick={() => {
                   setShowSidebar();
@@ -153,33 +153,33 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 }}
               >
                 <img
-                  src={imageIconsPath('Token Allocation')}
-                  alt='Token Allocation'
+                  src={imageIconsPath("Token Allocation")}
+                  alt="Token Allocation"
                 />
                 {strings.allocTtl}
               </NavLink>
               <a
-                href='/assets/Swords of Blood Pitchdeck Lite.pdf'
-                target='_blank'
-                rel='noreferrer'
-                className={[styles.navItem, styles.dropdownItem].join(' ')}
+                href="/assets/Swords of Blood Pitchdeck Lite.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className={[styles.navItem, styles.dropdownItem].join(" ")}
                 onClick={() => {
                   setShowSidebar();
                   toggleHere();
                 }}
-                style={{ height: 'max-content !important' }}
+                style={{ height: "max-content !important" }}
               >
-                <img src={imageIconsPath('Pitchdeck')} alt='Pitchdeck' />
+                <img src={imageIconsPath("Pitchdeck")} alt="Pitchdeck" />
                 {strings.deckTtl}
               </a>
               <NavLink
-                to='/team/'
+                to="/team/"
                 className={({ isActive }) =>
                   [
                     styles.navItem,
                     styles.dropdownItem,
-                    isActive ? styles.active : '',
-                  ].join(' ')
+                    isActive ? styles.active : "",
+                  ].join(" ")
                 }
                 onClick={() => {
                   setShowSidebar();
@@ -187,8 +187,8 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 }}
               >
                 <img
-                  src={imageIconsPath('Token Allocation')}
-                  alt='Token Allocation'
+                  src={imageIconsPath("Token Allocation")}
+                  alt="Token Allocation"
                 />
                 Team
               </NavLink>
@@ -225,20 +225,20 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 setShowSidebar();
                 toggleHere();
               }}
-              to='/roadmap'
+              to="/roadmap"
               className={({ isActive }) =>
                 [
                   styles.navItem,
                   styles.dropdownItem,
-                  isActive ? styles.active : '',
-                ].join(' ')
+                  isActive ? styles.active : "",
+                ].join(" ")
               }
             >
               {/* <div
               className={[styles.dropdownHeader, styles.navBtn].join(" ")}
               onClick={() => setProjectDropDown((prev) => !prev)}
             > */}
-              <img src={imageIconsPath('Roadmap')} alt='Roadmap' />
+              <img src={imageIconsPath("Roadmap")} alt="Roadmap" />
               {strings.rmTtl}
               {/* </div> */}
             </NavLink>
@@ -301,33 +301,33 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
             Token Claimer
           </NavLink> */}
           <NavLink
-            to='https://merch.swordsofblood.com'
-            target='_blank'
+            to="https://merch.swordsofblood.com"
+            target="_blank"
             className={({ isActive }) =>
               [
                 styles.navItem,
                 styles.navBtn,
-                isActive ? styles.active : '',
-              ].join(' ')
+                isActive ? styles.active : "",
+              ].join(" ")
             }
           >
             <div className={styles.gif_container}>
               Merch
-              <img src={gift} alt={'gift'} className={styles.gif} />
+              <img src={gift} alt={"gift"} className={styles.gif} />
             </div>
           </NavLink>
         </div>
         {/* // -- */}
-        <NavLink to='/signup'>
+        {/* <NavLink to="/signup">
           <button className={styles.betaSignUpButton}>
             <img
-              src={images['Union.svg']}
-              alt='Dragon Icon'
+              src={images["Union.svg"]}
+              alt="Dragon Icon"
               className={styles.dragonIcon}
             />
             BETA SIGN UP
           </button>
-        </NavLink>
+        </NavLink> */}
         <div className={styles.adressAndLanugage}>
           <div className={styles.languageChangingDropdown}>
             <button ref={langSwitch} className={styles.dropbtn}>
@@ -335,9 +335,9 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 <span className={styles.iconAndCountry}>
                   <img
                     src={images[`lang/${lang}.png`]}
-                    alt='language'
+                    alt="language"
                     className={styles.flag}
-                  />{' '}
+                  />{" "}
                   {lang.toUpperCase()}
                 </span>
                 <FontAwesomeIcon icon={faAngleDown} />
@@ -358,28 +358,28 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
       >
         <div className={styles.quicklinksContainer}>
           <h6 className={styles.quichLinksHeader}>{strings.quickLinksTtl}</h6>
-          <NavLink to='/privacy/' className={styles.link}>
+          <NavLink to="/privacy/" className={styles.link}>
             {strings.privPolicy}
           </NavLink>
 
-          <NavLink to='/termsandconditions/' className={styles.link}>
+          <NavLink to="/termsandconditions/" className={styles.link}>
             {strings.termsAndConds}
           </NavLink>
           <a
-            href='/assets/aml-hitbox.pdf'
-            target='_blank'
+            href="/assets/aml-hitbox.pdf"
+            target="_blank"
             className={styles.link}
           >
             {strings.amlPolicy}
           </a>
           <a
-            href='/assets/SWDTKN-SALE-Terms-and-Conditions.pdf'
+            href="/assets/SWDTKN-SALE-Terms-and-Conditions.pdf"
             className={styles.link}
-            target='_blank'
+            target="_blank"
           >
             {strings.salePolicy}
           </a>
-          <a href='/sitemap.xml' target='_blank' className={styles.link}>
+          <a href="/sitemap.xml" target="_blank" className={styles.link}>
             {strings.sitemap}
           </a>
         </div>
@@ -387,7 +387,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
           <div className={styles.descriptionContainer}>
             <p className={styles.description}>{strings.descText1}</p>
             <p className={styles.description}>
-              {strings.descText2.replace('{YEAR}', new Date().getFullYear())}
+              {strings.descText2.replace("{YEAR}", new Date().getFullYear())}
             </p>
             <p className={styles.description}>{strings.descText3}</p>
           </div>
@@ -399,11 +399,11 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 <a
                   key={i}
                   href={p.link}
-                  target='_blank'
-                  rel='noreferrer'
+                  target="_blank"
+                  rel="noreferrer"
                   className={styles.socialIcon}
                 >
-                  <img src={p.img} alt='' className={styles.socials} />
+                  <img src={p.img} alt="" className={styles.socials} />
                 </a>
               );
             })}

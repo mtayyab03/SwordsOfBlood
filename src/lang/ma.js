@@ -94,7 +94,7 @@ export default function Strings() {
     modeT6: "Kempen",
     modeInfo:
       "MVP Swords of Blood mempunyai beberapa mod permainan! Dapatkan akses eksklusif ke beta tertutup (pelancaran pada bulan Mei) apabila anda menyertai",
-    aboutDesc1: `Mempunyai pertempuran yang mencolok, grafik cemerlang dan pelbagai mod permainan, ${config.appName} ialah RPG hack-and-slash F2P berkualiti AAA yang pertama dalam pelancaran blockchain di Telos.`,
+    aboutDesc1: `Mempunyai pertempuran yang mencolok, grafik cemerlang dan pelbagai mod permainan, ${config.appName} ialah RPG hack-and-slash F2P berkualiti AAA yang pertama dalam pelancaran blockchain di Ape Chain.`,
     aboutDesc2:
       "Keganasan, pengkhianatan, dan kejahatan licik telah membawa kejatuhan kejam dunia Ezura. Pengkhianat, makhluk jahat yang sangat besar, telah memusnahkan pelindung tegar alam dan selama 1,000 tahun, kegelapan telah memerintah.",
     aboutDesc3:

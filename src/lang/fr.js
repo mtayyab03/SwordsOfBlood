@@ -93,7 +93,7 @@ export default function Strings() {
     modeT6: "Campagne",
     modeInfo:
       "L'MVP de Swords of Blood comprend plusieurs modes de jeu ! Obtenez un accès exclusif à la bêta fermée (qui sera lancée en mai) en participant à l'",
-    aboutDesc1: `Avec ses combats spectaculaires, ses graphismes époustouflants et ses différents modes de jeu, ${config.appName} est le premier RPG de qualité AAA à rythme rapide de type F2P sur la blockchain, lancé par Telos.`,
+    aboutDesc1: `Avec ses combats spectaculaires, ses graphismes époustouflants et ses différents modes de jeu, ${config.appName} est le premier RPG de qualité AAA à rythme rapide de type F2P sur la blockchain, lancé par Ape Chain.`,
     aboutDesc2: `La violence, la trahison et la malveillance ont entraîné la chute brutale du monde d'Ezura. Le Traître, un être d'un mal immense, a anéanti les vaillants protecteurs du royaume et depuis 1 000 ans, les ténèbres règnent.`,
     aboutDesc3: `C'est une époque de désespoir et de mort, alors que les armées du Betrayer couvrent le pays.`,
     aboutDesc4: `Mais des ruines surgit un salut possible : le dernier ordre guerrier autrefois puissant a été ressuscité par une ancienne déesse connue sous le nom de Sentinelle. Ensemble, vous allez tenter d'apporter une étincelle d'espoir à cette terre désolée.`,

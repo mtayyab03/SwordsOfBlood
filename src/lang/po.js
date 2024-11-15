@@ -93,7 +93,7 @@ export default function Strings() {
     modeT6: "Campanha",
     modeInfo:
       "O MVP Swords of Blood apresenta vários modos de jogo! Obtenha acesso exclusivo ao beta fechado (lançamento em maio) ao participar do atual",
-    aboutDesc1: `Com combate chamativo, gráficos estelares e vários modos de jogo, ${config.appName} é o primeiro RPG hack-and-slash F2P de qualidade AAA no lançamento do blockchain na Telos`,
+    aboutDesc1: `Com combate chamativo, gráficos estelares e vários modos de jogo, ${config.appName} é o primeiro RPG hack-and-slash F2P de qualidade AAA no lançamento do blockchain na Ape Chain`,
     aboutDesc2:
       "A violência, a traição e o mal astuto provocaram a brutal queda do mundo de Ezura. O Traidor, um ser de imenso mal, aniquilou os protectores vigorosos do reino e durante 1.000 anos reinou a escuridão.",
     aboutDesc3:

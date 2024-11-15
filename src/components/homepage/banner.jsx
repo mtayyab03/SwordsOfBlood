@@ -205,7 +205,7 @@ export default function Banner() {
                     <div className={styles.bulletpoint}>
                       <img src={images["svg/bullet-point.svg"]} alt="right" />
                       <div className={styles.bulletText}>
-                        30k USD in random token drops
+                        30k USD in token drops
                       </div>
                     </div>
 
@@ -213,7 +213,7 @@ export default function Banner() {
                     <div className={styles.bulletpoint}>
                       <img src={images["svg/bullet-point.svg"]} alt="right" />
                       <div className={styles.bulletText}>
-                        3 beta only XP earned NFT’s
+                        3 beta only items from the XP store
                       </div>
                     </div>
 
@@ -221,7 +221,7 @@ export default function Banner() {
                     <div className={styles.bulletpoint}>
                       <img src={images["svg/bullet-point.svg"]} alt="right" />
                       <div className={styles.bulletText}>
-                        Automatic entry into new PVP beta in 2025
+                        Exclusive VIP amas
                       </div>
                     </div>
 
@@ -229,7 +229,7 @@ export default function Banner() {
                     <div className={styles.bulletpoint}>
                       <img src={images["svg/bullet-point.svg"]} alt="right" />
                       <div className={styles.bulletText}>
-                        First access to Phygital collection in 2025
+                        Instant access to future PVP beta
                       </div>
                     </div>
                   </div>

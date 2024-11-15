@@ -79,7 +79,7 @@ export default function WhatYouGet() {
     <div className={styles.ourfacilites}>
       <img
         src={images["home/HalvdansQuestArt.webp"]}
-        alt="Swords of Blood launches as a revolutionary web3 game that allows you to earn while enjoying. Undoubtedly the next biggest game in Telos!"
+        alt="Swords of Blood launches as a revolutionary web3 game that allows you to earn while enjoying. Undoubtedly the next biggest game in Ape Chain!"
         className={["image", styles.halvdansQuestArt].join(" ")}
       />
       <div className="swiper facilities">

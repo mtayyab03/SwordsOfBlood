@@ -92,7 +92,7 @@ export default function Strings() {
     modeT6: "Monster Hunt",
     modeInfo:
       "Swords of Blood’s MVP features multiple game modes! Get exclusive access to the closed beta (launching in May) when you participate in the ongoing",
-    aboutDesc1: `Boasting flashy combat, stellar graphics, and various game modes, ${config.appName} is the first AAA-quality fast-paced F2P hack-and-slash RPG in the blockchain launching in Telos.`,
+    aboutDesc1: `Boasting flashy combat, stellar graphics, and various game modes, ${config.appName} is the first AAA-quality fast-paced F2P hack-and-slash RPG in the blockchain launching in Ape Chain.`,
     aboutDesc2:
       "Violence, betrayal and a cunning evil has brought about the brutal fall of the world of Ezura. The Betrayer, a being of immense evil, has annihilated the stalwart protectors of the realm and for 1,000 years, darkness has reigned.",
     aboutDesc3:

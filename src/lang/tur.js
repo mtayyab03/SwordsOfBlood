@@ -95,7 +95,7 @@ export default function Strings() {
     modeT6: "Kampanya",
     modeInfo:
       "Swords of Blood'un MVP'si birden fazla oyun modu sunuyor! Mayıs ayında başlayacak kapalı beta erişimi için devam eden etkinliğe katılın.",
-    aboutDesc1: `Gösterişli dövüşler, mükemmel grafikler ve çeşitli oyun modları sunan ${config.appName}, Telos'da lansmanı yapılan blok zincirindeki ilk AAA kalitesinde hızlı tempolu F2P hack-and-slash RPG'dir.`,
+    aboutDesc1: `Gösterişli dövüşler, mükemmel grafikler ve çeşitli oyun modları sunan ${config.appName}, Ape Chain'da lansmanı yapılan blok zincirindeki ilk AAA kalitesinde hızlı tempolu F2P hack-and-slash RPG'dir.`,
     aboutDesc2:
       "Şiddet, ihanet ve kurnaz kötülük Ezura dünyasının acımasız çöküşüne neden oldu. Muazzam kötülüğe sahip bir varlık olan Hain, diyarın sadık koruyucularını yok etti ve 1.000 yıldır karanlık hüküm sürüyor.",
     aboutDesc3:

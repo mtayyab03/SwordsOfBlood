@@ -57,7 +57,7 @@
 }
 
 .navItem {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
@@ -145,7 +145,7 @@
 }
 
 .quichLinksHeader {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
@@ -156,7 +156,7 @@
 }
 
 .quicklinksContainer .link {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
@@ -172,7 +172,7 @@
 }
 
 .descriptionContainer .description {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 300;
@@ -219,7 +219,7 @@ img.gif {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: #c9ab84;
   border: none;
   border-radius: 14px;
@@ -290,7 +290,7 @@ img.gif {
 }
 
 .languageChangingDropdown .dropbtn .languageAndCountryName {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 600;
@@ -334,7 +334,7 @@ img.gif {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-display: swap;
   font-style: normal;
   font-weight: 600;

@@ -72,6 +72,7 @@
   margin-left: 13px;
   text-decoration: none;
   text-align: left; /* Explicitly aligns text to the left */
+  padding-right: 2rem;
 }
 
 .betaSignUpButton {

@@ -93,7 +93,7 @@ export default function Strings() {
     modeT6: "Campagna",
     modeInfo:
       "L'MVP di Swords of Blood presenta diversi modalità di gioco! Ottieni l'accesso esclusivo alla beta chiusa (inizio a maggio) partecipando al",
-    aboutDesc1: `Con combattimenti spettacolari, grafica stellare e diverse modalità di gioco, ${config.appName} è il primo gioco di ruolo F2P veloce e di qualità AAA nella blockchain, lanciato da Telos.`,
+    aboutDesc1: `Con combattimenti spettacolari, grafica stellare e diverse modalità di gioco, ${config.appName} è il primo gioco di ruolo F2P veloce e di qualità AAA nella blockchain, lanciato da Ape Chain.`,
     aboutDesc2:
       "Violenza, tradimento e astuta malvagità hanno portato alla brutale caduta del mondo di Ezura. Il Traditore, un essere di immensa malvagità, ha annientato gli strenui protettori del regno e per 1.000 anni ha regnato l'oscurità.",
     aboutDesc3:

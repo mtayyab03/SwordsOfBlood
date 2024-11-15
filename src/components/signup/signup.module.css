@@ -146,3 +146,83 @@
     max-width: 100%;
   }
 }
+
+.cardOverlay {
+  width: 100%;
+  height: 437px !important;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border-radius: 14px; */
+  text-align: center;
+  border: 1px solid #c9ab84;
+  box-shadow: 0 4px 10px rgba(243, 222, 136, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-right: 2px;
+}
+
+.cardContent {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bulletpoint {
+  display: flex;
+  flex-direction: row;
+  /* width: 90%; */
+  padding-right: 1.5rem;
+  margin-left: 2rem;
+  color: white; /* Or any color to make the text visible */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.prizeTitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #c9ab84;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 1rem;
+}
+
+.bulletText {
+  font-size: 20px;
+  margin-left: 13px;
+  text-decoration: none;
+  text-align: left; /* Explicitly aligns text to the left */
+}
+
+.betaSignUpButton {
+  width: 100%;
+  height: 60px;
+  padding-top: 1.1rem;
+  margin-right: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  color: #242424;
+  background-color: #c9ab84;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  margin-top: auto;
+}
+.bulletpoint img {
+  width: 2rem;
+  height: 2rem;
+}

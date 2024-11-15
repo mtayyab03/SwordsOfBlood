@@ -1,17 +1,17 @@
-import { useContext, useState, useEffect, useRef } from 'react';
+import { useContext, useState, useEffect, useRef } from "react";
 
-import Localization from '../../context/localization';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Localization from "../../context/localization";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXmark,
   faBars,
   faAngleDown,
-} from '@fortawesome/free-solid-svg-icons';
-import { config } from '../../functions/config';
-import { importAllImages } from '../../functions/common';
-import styles from './header.module.css';
-import { Link, NavLink } from 'react-router-dom';
-import MblLogo from '../../images/home/Swoordsofblood-logo-mobile.png';
+} from "@fortawesome/free-solid-svg-icons";
+import { config } from "../../functions/config";
+import { importAllImages } from "../../functions/common";
+import styles from "./header.module.css";
+import { Link, NavLink } from "react-router-dom";
+import MblLogo from "../../images/home/Swoordsofblood-logo-mobile.png";
 export default function Header({ toggleSidebar }) {
   const { strings, lang, locales, SetLanguage } = useContext(Localization);
   const [langMenu, setLangMenu] = useState([]);
@@ -23,7 +23,7 @@ export default function Header({ toggleSidebar }) {
     if (sidebarOpened) setSidebarOpened(false);
     else setSidebarOpened(true);
     toggleSidebar();
-    console.log('check');
+    console.log("check");
   };
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Header({ toggleSidebar }) {
           // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <Link
             key={l}
-            to='#'
+            to="#"
             className={styles.content}
             onClick={(_e) => {
               SetLanguage(l);
@@ -42,9 +42,9 @@ export default function Header({ toggleSidebar }) {
           >
             <img
               src={images[`lang/${l}.png`]}
-              alt='language'
+              alt="language"
               className={styles.flag}
-            />{' '}
+            />{" "}
             {l.toUpperCase()}
           </Link>
         );
@@ -57,9 +57,9 @@ export default function Header({ toggleSidebar }) {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <Link to='/'>
+        <Link to="/">
           <img
-            src={images['logo.webp']}
+            src={images["logo.webp"]}
             alt={strings.logoTitle}
             className={styles.logo}
           />
@@ -69,15 +69,15 @@ export default function Header({ toggleSidebar }) {
         <>
           <button
             onClick={toggleButton}
-            id='close-ico'
+            id="close-ico"
             className={styles.close}
           >
             <FontAwesomeIcon icon={faXmark} />
           </button>
           <button
             onClick={toggleButton}
-            id='open-ico'
-            style={{ display: 'none' }}
+            id="open-ico"
+            style={{ display: "none" }}
             className={styles.hamburger}
           >
             <FontAwesomeIcon icon={faBars} />
@@ -87,15 +87,15 @@ export default function Header({ toggleSidebar }) {
         <>
           <button
             onClick={toggleButton}
-            id='open-ico'
+            id="open-ico"
             className={styles.hamburger}
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
           <button
             onClick={toggleButton}
-            id='close-ico'
-            style={{ display: 'none' }}
+            id="close-ico"
+            style={{ display: "none" }}
             className={styles.close}
           >
             <FontAwesomeIcon icon={faXmark} />
@@ -103,17 +103,17 @@ export default function Header({ toggleSidebar }) {
         </>
       )}
       <img
-        src={images['logo.webp']}
-        alt='Swords of Blood'
-        className={styles.headerLogo + ' ' + 'maxno'}
+        src={images["logo.webp"]}
+        alt="Swords of Blood"
+        className={styles.headerLogo + " " + "maxno"}
       />
-      <img src={MblLogo} alt='Swords of Blood' className={'maxnoso'} />
+      <img src={MblLogo} alt="Swords of Blood" className={"maxnoso"} />
       <div className={styles.adressAndLanugage}>
-        <NavLink to='/signup'>
+        <NavLink to="/signup">
           <button className={styles.betaSignUpButton}>
             <img
-              src={images['Union.svg']}
-              alt='Dragon Icon'
+              src={images["Union.svg"]}
+              alt="Dragon Icon"
               className={styles.dragonIcon}
             />
             BETA SIGN UP
@@ -125,9 +125,9 @@ export default function Header({ toggleSidebar }) {
               <span className={styles.iconAndCountry}>
                 <img
                   src={images[`lang/${lang}.png`]}
-                  alt='language'
+                  alt="language"
                   className={styles.flag}
-                />{' '}
+                />{" "}
                 {lang.toUpperCase()}
               </span>
               <FontAwesomeIcon icon={faAngleDown} />
